@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio interactivo del curso Evaluación de los Aprendizajes, organizado por ocho semanas como mundos de un videojuego." />
+  <title>Portafolio | Evaluación de los Aprendizajes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="boot" class="boot-screen" aria-hidden="false">
+    <div class="boot-card">
+      <div class="pixel-cloud cloud-a"></div>
+      <div class="pixel-cloud cloud-b"></div>
+      <p class="eyebrow">2do Cuatrimestre 2026 · Sede Central San José</p>
+      <h1>EVALUACIÓN<br><span>DE LOS APRENDIZAJES</span></h1>
+      <p class="boot-subtitle">Portafolio interactivo estilo Mario Bros · 8 mundos de aprendizaje</p>
+      <p class="course-code">2026C2-G07-EVALUACIÓN DE LOS APRENDIZAJES</p>
+      <p class="teacher-line"><strong>Docente:</strong> Licda. Paola Porras Monge</p>
+      <div class="character-badges" aria-label="Temática del portafolio">
+        <div class="char-badge"><span>🍄</span><b>Mario Bros</b></div>
+        <div class="char-badge"><span>🦖</span><b>Yoshi</b></div>
+        <div class="char-badge"><span>⭐</span><b>Curso completado</b></div>
+      </div>
+      <div class="boot-player">
+        <span class="player-icon">🎓</span>
+        <div>
+          <small>ESTUDIANTE</small>
+          <strong>Daniel Tijerino Cerón</strong>
+        </div>
+      </div>
+      <button id="startBtn" class="start-button" type="button">▶ INICIAR RECORRIDO</button>
+      <p class="boot-note">Dedicatoria especial: gracias, profe Paola, por guiarnos en este recorrido de aprendizaje y evaluación.</p>
+    </div>
+  </div>
+
+  <header class="hud" id="top">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-block">?</span>
+      <span>PORTAFOLIO</span>
+    </a>
+    <div class="hud-stats" aria-label="Progreso">
+      <span class="hud-item">🪙 <strong id="coinCount">0</strong>/8</span>
+      <span class="hud-item">⭐ <strong id="worldLabel">INICIO</strong></span>
+      <button id="soundBtn" class="hud-button" type="button" aria-label="Activar o desactivar sonidos">🔊</button>
+      <button id="printBtn" class="hud-button" type="button" aria-label="Imprimir portafolio">🖨️</button>
+    </div>
+  </header>
+
+  <nav class="world-nav" aria-label="Navegación por semanas">
+    <a href="#semana1" data-world="1">1</a>
+    <a href="#semana2" data-world="2">2</a>
+    <a href="#semana3" data-world="3">3</a>
+    <a href="#semana4" data-world="4">4</a>
+    <a href="#semana5" data-world="5">5</a>
+    <a href="#semana6" data-world="6">6</a>
+    <a href="#semana7" data-world="7">7</a>
+    <a href="#semana8" data-world="8">8</a>
+    <a href="#final" class="castle-link" aria-label="Ir a la reflexión final">🏰</a>
+  </nav>
+
+  <main>
+    <section id="inicio" class="hero game-section sky-world" data-world-name="INICIO">
+      <div class="decor cloud cloud-1">☁</div>
+      <div class="decor cloud cloud-2">☁</div>
+      <div class="decor coin coin-1">🪙</div>
+      <div class="decor coin coin-2">🪙</div>
+      <div class="hero-copy">
+        <span class="level-tag">WORLD 0-0</span>
+        <div class="course-banner">
+          <span>2026C2-G07-EVALUACIÓN DE LOS APRENDIZAJES</span>
+          <span>Docente: Licda. Paola Porras Monge</span>
+          <span>2do Cuatrimestre 2026 · Sede Central San José</span>
+        </div>
+        <h2>Mi recorrido por la<br><em>evaluación de los aprendizajes</em></h2>
+        <p>
+          Este portafolio representa ocho semanas de aprendizaje como si fueran ocho mundos de un videojuego.
+          En cada nivel fui pasando de comprender la realidad del estudiante a diseñar instrumentos, construir pruebas,
+          analizar la normativa y reflexionar sobre una educación más inclusiva.
+        </p>
+        <div class="dedication-card">
+          <strong>🌟 Dedicatoria</strong>
+          <p>A la <strong>Licda. Paola Porras Monge</strong>, gracias por el acompañamiento, la orientación y los aprendizajes compartidos durante este curso. Este portafolio resume el camino recorrido y el crecimiento alcanzado en cada semana.</p>
+          <div class="thanks-bubble">🍄 ¡Gracias, profe, por acompañarnos en esta aventura académica!</div>
+        </div>
+        <div class="hero-actions">
+          <a class="game-button primary" href="#semana1">COMENZAR MUNDO 1</a>
+          <a class="game-button secondary" href="#mapa">VER MAPA</a>
+        </div>
+      </div>
+      <div class="hero-scene" aria-hidden="true">
+        <div class="pipe pipe-left"><span></span></div>
+        <div class="question-row">
+          <div class="brick">■</div><div class="question-block">?</div><div class="brick">■</div>
+        </div>
+        <div class="hill hill-big"></div>
+        <div class="hill hill-small"></div>
+        <div class="ground"></div>
+      </div>
+    </section>
+
+    <section id="mapa" class="map-section game-section" data-world-name="MAPA">
+      <div class="section-heading centered">
+        <span class="level-tag dark">MAPA DEL CURSO</span>
+        <h2>8 mundos · 8 aprendizajes clave</h2>
+        <p>Cada punto del mapa abre una semana y muestra lo aprendido, la actividad realizada, la evidencia y una reflexión personal.</p>
+      </div>
+      <div class="course-map" role="list" aria-label="Mapa de mundos">
+        <a href="#semana1" class="map-node n1" role="listitem"><b>1</b><span>Contexto del estudiante</span></a>
+        <a href="#semana2" class="map-node n2" role="listitem"><b>2</b><span>Generalidades</span></a>
+        <a href="#semana3" class="map-node n3" role="listitem"><b>3</b><span>Enfoques</span></a>
+        <a href="#semana4" class="map-node n4" role="listitem"><b>4</b><span>Indicadores</span></a>
+        <a href="#semana5" class="map-node n5" role="listitem"><b>5</b><span>Instrumentos</span></a>
+        <a href="#semana6" class="map-node n6" role="listitem"><b>6</b><span>Pruebas</span></a>
+        <a href="#semana7" class="map-node n7" role="listitem"><b>7</b><span>Reglamento</span></a>
+        <a href="#semana8" class="map-node n8" role="listitem"><b>8</b><span>Inclusión</span></a>
+        <div class="map-castle">🏰<span>META</span></div>
+        <div class="map-path" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="semana1" class="week game-section grass-world" data-world="1" data-world-name="MUNDO 1">
+      <div class="week-shell">
+        <div class="week-topline">
+          <span class="level-tag">WORLD 1-1</span>
+          <span class="week-status">SEMANA 1</span>
+        </div>
+        <div class="week-grid">
+          <article class="week-content">
+            <p class="kicker">ABORDAJE DE SITUACIONES EN EL AULA</p>
+            <h2>Antes de evaluar, debo comprender al estudiante</h2>
+            <p class="lead">
+              La primera semana me llevó a pensar la labor docente desde el contexto real del estudiante. A partir del cortometraje
+              <strong>“La mancha de grasa”</strong>, comprendí que una dificultad académica no siempre nace dentro del aula y que el docente
+              necesita observar, escuchar y conocer el entorno antes de juzgar una conducta o un rendimiento.
+            </p>
+            <div class="learning-grid">
+              <div class="info-block"><span>🧠</span><h3>¿Qué aprendí?</h3><p>Que el aprendizaje está relacionado con factores comunales, emocionales, psicológicos y conductuales. La intervención docente debe partir del conocimiento de esa realidad.</p></div>
+              <div class="info-block"><span>🧩</span><h3>Actividad</h3><p>Análisis del cortometraje y respuesta a preguntas sobre la actuación docente, la problemática del estudiante y posibles formas de abordaje.</p></div>
+              <div class="info-block"><span>💬</span><h3>Reflexión</h3><p>No basta con decir “no trabaja” o “no aprende”. Primero hay que preguntarse qué está ocurriendo y qué apoyo concreto puedo ofrecer desde mi función docente.</p></div>
+            </div>
+            <button class="question-reveal" type="button" data-reveal="s1">?<span>Bloque sorpresa</span></button>
+            <div id="s1" class="reveal-card" hidden><strong>POWER-UP:</strong> La empatía también es una herramienta pedagógica. Comprender el contexto permite intervenir con mayor justicia y sentido educativo.</div>
+          </article>
+          <aside class="evidence-card">
+            <span class="evidence-label">EVIDENCIA DEL NIVEL</span>
+            <button class="evidence-image" type="button" data-image="assets/images/semana1_plataforma.png" aria-label="Ampliar evidencia de la semana 1">
+              <img src="assets/images/semana1_plataforma.png" alt="Captura de la plataforma correspondiente a la Semana 1" loading="lazy" />
+            </button>
+            <p>Plataforma del curso: “La mancha de grasa” y abordaje de situaciones en el aula.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="semana2" class="week game-section underground-world" data-world="2" data-world-name="MUNDO 2">
+      <div class="week-shell">
+        <div class="week-topline"><span class="level-tag">WORLD 2-1</span><span class="week-status">SEMANA 2</span></div>
+        <div class="week-grid reverse">
+          <article class="week-content">
+            <p class="kicker">GENERALIDADES DE LA EVALUACIÓN</p>
+            <h2>Evaluar es un proceso, no un momento aislado</h2>
+            <p class="lead">
+              En esta semana entendí que la evaluación no debe reducirse a “poner una nota”. Se estudió qué evaluar, quién evalúa,
+              cuándo hacerlo, cómo recoger la información y para qué utilizarla. La evaluación debe estar integrada al proceso educativo
+              y servir para tomar decisiones de mejora.
+            </p>
+            <div class="learning-grid">
+              <div class="info-block"><span>🎯</span><h3>Qué y cuándo</h3><p>Se valoran conocimientos, habilidades, actitudes, destrezas y procedimientos; la evaluación puede realizarse al inicio, durante el proceso y al final.</p></div>
+              <div class="info-block"><span>🔄</span><h3>Funciones</h3><p>Diagnóstica para conocer el punto de partida, formativa para reorientar el proceso y sumativa para constatar los logros alcanzados.</p></div>
+              <div class="info-block"><span>📈</span><h3>Para qué</h3><p>Para identificar áreas de mejora, tomar decisiones, retroalimentar y elevar la calidad del proceso de enseñanza y aprendizaje.</p></div>
+            </div>
+            <button class="question-reveal" type="button" data-reveal="s2">?<span>Bloque sorpresa</span></button>
+            <div id="s2" class="reveal-card" hidden><strong>POWER-UP:</strong> La calificación es solo una parte. La evaluación cobra sentido cuando la información obtenida se convierte en acciones de mejora.</div>
+          </article>
+          <aside class="evidence-card dark-card">
+            <span class="evidence-label">EVIDENCIA DEL NIVEL</span>
+            <button class="evidence-image" type="button" data-image="assets/images/semana2_plataforma.png" aria-label="Ampliar evidencia de la semana 2">
+              <img src="assets/images/semana2_plataforma.png" alt="Pantallazo de la plataforma correspondiente a la Semana 2" loading="lazy" />
+            </button>
+            <p>Pantallazo de la plataforma utilizado como evidencia de la Semana 2.</p>
+            <a class="doc-link" href="assets/docs/semana2_generalidades_evaluacion.pptx">📎 Abrir presentación base</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="semana3" class="week game-section sky-night-world" data-world="3" data-world-name="MUNDO 3">
+      <div class="week-shell">
+        <div class="week-topline"><span class="level-tag">WORLD 3-1</span><span class="week-status">SEMANA 3</span></div>
+        <div class="week-grid">
+          <article class="week-content">
+            <p class="kicker">ENFOQUES DE LA EVALUACIÓN</p>
+            <h2>Tres formas de entender cómo aprende el estudiante</h2>
+            <p class="lead">
+              Se analizaron los enfoques <strong>conductista, constructivista y cognitivo</strong>. Comprendí que la manera de enseñar y evaluar cambia
+              según la concepción de aprendizaje que se adopte: observar conductas y resultados, construir conocimiento desde la experiencia o
+              atender los procesos mentales que intervienen en la comprensión.
+            </p>
+            <div class="approach-cards">
+              <div><b>Conductista</b><span>Conducta observable · respuesta · resultado</span></div>
+              <div><b>Constructivista</b><span>Experiencia · participación · construcción</span></div>
+              <div><b>Cognitivo</b><span>Comprensión · memoria · razonamiento</span></div>
+            </div>
+            <p class="reflection-box"><strong>Pregunta generadora:</strong> ¿Con cuál enfoque me identifico más? La actividad del foro permitió contrastar las respuestas y argumentar la propia posición.</p>
+            <div class="resource-row">
+              <a href="https://www.youtube.com/watch?v=6k5lazqY3Wo" target="_blank" rel="noopener">▶ Video 1</a>
+              <a href="https://www.youtube.com/watch?v=eGa1NaUFbaM" target="_blank" rel="noopener">▶ Video 2</a>
+              <a href="https://www.youtube.com/watch?v=UaY_6etm_NQ" target="_blank" rel="noopener">▶ Video 3</a>
+            </div>
+            <button class="question-reveal" type="button" data-reveal="s3">?<span>Bloque sorpresa</span></button>
+            <div id="s3" class="reveal-card" hidden><strong>POWER-UP:</strong> Evaluar también revela cómo concibo el aprendizaje. Por eso el instrumento debe ser coherente con la forma en que espero que el estudiante aprenda y demuestre lo aprendido.</div>
+          </article>
+          <aside class="evidence-card">
+            <span class="evidence-label">EVIDENCIA DEL NIVEL</span>
+            <button class="evidence-image" type="button" data-image="assets/images/semana3_plataforma.png" aria-label="Ampliar evidencia de la semana 3">
+              <img src="assets/images/semana3_plataforma.png" alt="Captura de la Semana 3 sobre enfoques de la evaluación" loading="lazy" />
+            </button>
+            <p>Foro sobre enfoques de la evaluación y recursos audiovisuales.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="semana4" class="week game-section desert-world" data-world="4" data-world-name="MUNDO 4">
+      <div class="week-shell">
+        <div class="week-topline"><span class="level-tag">WORLD 4-1</span><span class="week-status">SEMANA 4</span></div>
+        <div class="week-grid reverse">
+          <article class="week-content">
+            <p class="kicker">INDICADORES Y CRITERIOS</p>
+            <h2>De lo que quiero enseñar a lo que realmente puedo observar</h2>
+            <p class="lead">
+              Esta semana aprendí a convertir los aprendizajes esperados en <strong>indicadores observables</strong>. Un buen indicador debe ser claro,
+              preciso, congruente con la habilidad que se desea desarrollar y referirse a un aspecto concreto que pueda ser observado y valorado.
+            </p>
+            <div class="formula-box">
+              <span>VERBO / ACCIÓN</span><b>+</b><span>CONTENIDO</span><b>+</b><span>CONDICIÓN <small>(cuando corresponda)</small></span>
+            </div>
+            <div class="learning-grid compact">
+              <div class="info-block"><span>👁️</span><h3>Observable</h3><p>El indicador debe expresar una conducta o desempeño que pueda verificarse.</p></div>
+              <div class="info-block"><span>✍️</span><h3>Claro</h3><p>Debe redactarse de forma precisa para evitar interpretaciones diferentes.</p></div>
+              <div class="info-block"><span>⚖️</span><h3>Criterios</h3><p>Los criterios especifican el tipo y grado de aprendizaje esperado y deben adecuarse a las necesidades del estudiantado.</p></div>
+            </div>
+            <button class="question-reveal" type="button" data-reveal="s4">?<span>Bloque sorpresa</span></button>
+            <div id="s4" class="reveal-card" hidden><strong>POWER-UP:</strong> Un indicador mal redactado puede hacer injusta una evaluación. La claridad empieza antes de aplicar el instrumento.</div>
+          </article>
+          <aside class="evidence-card warm-card">
+            <span class="evidence-label">EVIDENCIA DEL NIVEL</span>
+            <button class="evidence-image" type="button" data-image="assets/images/semana4_plataforma.png" aria-label="Ampliar evidencia de la semana 4">
+              <img src="assets/images/semana4_plataforma.png" alt="Pantallazo de la plataforma utilizado como evidencia de la Semana 4" loading="lazy" />
+            </button>
+            <p>Pantallazo de la semana incorporado como evidencia, junto con los materiales de indicadores e instrumentos.</p>
+            <div class="doc-stack">
+              <a class="doc-link" href="assets/docs/semana4_indicadores.pptx">📎 Indicadores</a>
+              <a class="doc-link" href="assets/docs/semana4_instrumentos_observacion.pptx">📎 Instrumentos</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="semana5" class="week game-section water-world" data-world="5" data-world-name="MUNDO 5">
+      <div class="week-shell">
+        <div class="week-topline"><span class="level-tag">WORLD 5-1</span><span class="week-status">SEMANA 5</span></div>
+        <div class="week-grid">
+          <article class="week-content">
+            <p class="kicker">INSTRUMENTOS DE OBSERVACIÓN</p>
+            <h2>La evidencia convierte la observación en evaluación</h2>
+            <p class="lead">
+              El objetivo fue elaborar instrumentos para evaluar el rendimiento académico y analizar si lo construido cumple con requisitos de
+              <strong>validez y confiabilidad</strong>. Comprendí que observar no es simplemente “ver”; implica registrar información con criterios claros y con un propósito definido.
+            </p>
+            <div class="toolbelt" aria-label="Instrumentos estudiados">
+              <span>📊 Escala de calificación</span>
+              <span>✅ Lista de cotejo</span>
+              <span>🧾 Registro de desempeño</span>
+              <span>📝 Registro anecdótico</span>
+              <span>📐 Rúbrica</span>
+            </div>
+            <div class="learning-grid compact">
+              <div class="info-block"><span>🛠️</span><h3>Trabajo en grupo</h3><p>Elaboración del instrumento de observación solicitado por la docente a partir de los indicadores trabajados previamente.</p></div>
+              <div class="info-block"><span>📚</span><h3>Glosario</h3><p>Definición individual de escala de calificación, rúbrica, registro de desempeño, registro anecdótico y lista de cotejo.</p></div>
+              <div class="info-block"><span>🔍</span><h3>Validez</h3><p>El instrumento debe medir aquello que realmente se pretende evaluar y producir información útil para la toma de decisiones.</p></div>
+            </div>
+            <button class="question-reveal" type="button" data-reveal="s5">?<span>Bloque sorpresa</span></button>
+            <div id="s5" class="reveal-card" hidden><strong>POWER-UP:</strong> Si no registro la evidencia de forma técnica, mi evaluación puede quedar reducida a una percepción. El instrumento le da respaldo a la decisión docente.</div>
+          </article>
+          <aside class="evidence-card">
+            <span class="evidence-label">EVIDENCIA DEL NIVEL</span>
+            <button class="evidence-image" type="button" data-image="assets/images/semana5_plataforma.png" aria-label="Ampliar evidencia de la semana 5">
+              <img src="assets/images/semana5_plataforma.png" alt="Captura de la Semana 5 sobre instrumentos de observación" loading="lazy" />
+            </button>
+            <a class="doc-link" href="assets/docs/semana5_instrumentos_observacion.pptx">📎 Material de instrumentos</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="semana6" class="week game-section lava-world" data-world="6" data-world-name="MUNDO 6">
+      <div class="week-shell">
+        <div class="week-topline"><span class="level-tag">WORLD 6-1</span><span class="week-status">SEMANA 6</span></div>
+        <div class="week-grid reverse">
+          <article class="week-content">
+            <p class="kicker">PRUEBA ESCRITA, ORAL Y DE EJECUCIÓN</p>
+            <h2>El instrumento cambia según lo que quiero comprobar</h2>
+            <p class="lead">
+              Se inició el proceso de elaboración de pruebas escritas, orales y de ejecución. El aprendizaje clave fue entender que no toda habilidad puede medirse de la misma forma:
+              algunas requieren una respuesta escrita, otras la expresión oral y otras necesitan observar directamente el <strong>hacer</strong> del estudiante.
+            </p>
+            <div class="boss-cards">
+              <div><span>📝</span><b>Prueba escrita</b><p>Requiere planificación, tabla de especificaciones, parte administrativa, parte técnica e ítems coherentes con los aprendizajes.</p></div>
+              <div><span>🎙️</span><b>Prueba oral</b><p>Permite valorar expresión, claridad, vocabulario, razonamiento y organización de ideas; no debe improvisarse.</p></div>
+              <div><span>🧰</span><b>Prueba de ejecución</b><p>Mide el hacer. Se observa tanto el proceso como el producto y se utiliza una escala o instrumento para registrar el desempeño.</p></div>
+            </div>
+            <p class="reflection-box"><strong>Actividad:</strong> análisis de los lineamientos y trabajo en subgrupos para identificar las características de los ítems y las partes de la prueba.</p>
+            <button class="question-reveal" type="button" data-reveal="s6">?<span>Bloque sorpresa</span></button>
+            <div id="s6" class="reveal-card" hidden><strong>POWER-UP:</strong> Una prueba bien construida comienza por el aprendizaje que quiero medir, no por la cantidad de preguntas que quiero incluir.</div>
+          </article>
+          <aside class="evidence-card dark-card">
+            <span class="evidence-label">EVIDENCIA DEL NIVEL</span>
+            <button class="evidence-image" type="button" data-image="assets/images/semana6_plataforma.png" aria-label="Ampliar evidencia de la semana 6">
+              <img src="assets/images/semana6_plataforma.png" alt="Captura de la Semana 6 sobre pruebas escritas, orales y de ejecución" loading="lazy" />
+            </button>
+            <a class="doc-link" href="assets/docs/semana6_prueba_oral_ejecucion.docx">📎 Lineamientos oral y ejecución</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="semana7" class="week game-section castle-world" data-world="7" data-world-name="MUNDO 7">
+      <div class="week-shell">
+        <div class="week-topline"><span class="level-tag">WORLD 7-1</span><span class="week-status">SEMANA 7</span></div>
+        <div class="week-grid">
+          <article class="week-content">
+            <p class="kicker">REGLAMENTO DE EVALUACIÓN DE LOS APRENDIZAJES</p>
+            <h2>Evaluar también implica conocer derechos, deberes y límites</h2>
+            <p class="lead">
+              El estudio del Reglamento de Evaluación de los Aprendizajes permitió conectar todo lo trabajado con el marco que regula la práctica docente.
+              La evaluación debe ser continua, utilizar información cualitativa y cuantitativa y respetar procedimientos que protejan el derecho del estudiante a una evaluación clara y fundamentada.
+            </p>
+            <div class="rule-grid">
+              <div><span>📌</span><b>Componentes</b><p>Trabajo cotidiano, tareas, pruebas, proyecto, demostración de lo aprendido y asistencia, según corresponda.</p></div>
+              <div><span>👨‍🏫</span><b>Docente</b><p>Debe informar, elaborar instrumentos, retroalimentar, registrar evidencias y aplicar los lineamientos técnicos.</p></div>
+              <div><span>🎓</span><b>Estudiante</b><p>Tiene derecho a conocer criterios, indicadores, instrumentos y procedimientos de evaluación.</p></div>
+              <div><span>🧭</span><b>Sentido crítico</b><p>La normativa ordena y brinda respaldo, pero su aplicación debe mantener relación con el contexto y las necesidades educativas.</p></div>
+            </div>
+            <p class="reflection-box"><strong>Actividad del foro:</strong> analizar pros y contras del reglamento y de los lineamientos de evaluación, evitando asumir que toda norma funciona de manera perfecta en todas las realidades del aula.</p>
+            <button class="question-reveal" type="button" data-reveal="s7">?<span>Bloque sorpresa</span></button>
+            <div id="s7" class="reveal-card" hidden><strong>POWER-UP:</strong> Conocer la normativa no significa aplicarla mecánicamente; significa saber qué exige, qué protege y cómo actuar con criterio profesional dentro de ese marco.</div>
+          </article>
+          <aside class="evidence-card">
+            <span class="evidence-label">EVIDENCIA DEL NIVEL</span>
+            <button class="evidence-image" type="button" data-image="assets/images/semana7_plataforma.png" aria-label="Ampliar evidencia de la semana 7">
+              <img src="assets/images/semana7_plataforma.png" alt="Captura de la Semana 7 sobre el Reglamento de Evaluación de los Aprendizajes" loading="lazy" />
+            </button>
+            <div class="doc-stack">
+              <a class="doc-link" href="assets/docs/semana7_rea_resumen.pdf">📎 Resumen REA</a>
+              <a class="doc-link" href="assets/docs/semana7_reglamento_evaluacion.pdf">📎 Reglamento completo</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="semana8" class="week game-section star-world" data-world="8" data-world-name="MUNDO 8">
+      <div class="week-shell">
+        <div class="week-topline"><span class="level-tag">WORLD 8-1</span><span class="week-status">SEMANA 8 · FINAL</span></div>
+        <div class="week-grid reverse">
+          <article class="week-content">
+            <p class="kicker">NECESIDADES EDUCATIVAS · CORTOMETRAJE “CUERDAS”</p>
+            <h2>La inclusión no es tratar a todos igual, sino dar a cada quien lo que necesita</h2>
+            <p class="lead">
+              La última semana cerró el curso desde una dimensión humana. El cortometraje <strong>“Cuerdas”</strong> sirvió para reflexionar sobre cómo abordar
+              a estudiantes con diferentes necesidades educativas y sobre el papel del docente en la creación de oportunidades reales de participación, aprendizaje y pertenencia.
+            </p>
+            <div class="learning-grid">
+              <div class="info-block"><span>🤝</span><h3>Inclusión</h3><p>La necesidad educativa no debe convertirse en una etiqueta que limite al estudiante. El aula debe adaptarse para que pueda participar y demostrar sus capacidades.</p></div>
+              <div class="info-block"><span>🧠</span><h3>Mirada docente</h3><p>Antes de exigir el mismo camino para todos, debo identificar barreras, apoyos y formas alternativas de acceso al aprendizaje.</p></div>
+              <div class="info-block"><span>❤️</span><h3>Dimensión humana</h3><p>El acompañamiento, el respeto y la sensibilidad no sustituyen la técnica pedagógica: la hacen más significativa.</p></div>
+            </div>
+            <div class="video-card">
+              <div class="video-copy">
+                <span>RECURSO FINAL</span>
+                <h3>Cortometraje “Cuerdas”</h3>
+                <p>Recurso utilizado para comentar el abordaje de los estudiantes en sus diferentes necesidades educativas.</p>
+                <a href="https://www.youtube.com/watch?v=4INwx_tmTKw" target="_blank" rel="noopener">▶ VER EN YOUTUBE</a>
+              </div>
+              <div class="video-visual">🎞️<span>CUERDAS</span></div>
+            </div>
+            <button class="question-reveal" type="button" data-reveal="s8">?<span>Bloque final</span></button>
+            <div id="s8" class="reveal-card" hidden><strong>STAR POWER:</strong> Una evaluación verdaderamente educativa reconoce diferencias, elimina barreras y permite que cada estudiante muestre lo que sabe y puede hacer de una manera pertinente.</div>
+          </article>
+          <aside class="evidence-card bright-card">
+            <span class="evidence-label">EVIDENCIA DEL NIVEL</span>
+            <button class="evidence-image" type="button" data-image="assets/images/semana8_plataforma.png" aria-label="Ampliar evidencia de la semana 8">
+              <img src="assets/images/semana8_plataforma.png" alt="Captura de la Semana 8 sobre necesidades educativas y el cortometraje Cuerdas" loading="lazy" />
+            </button>
+            <p>Última semana: necesidades educativas especiales, reflexión y evaluación docente.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="final" class="final-section game-section" data-world-name="META">
+      <div class="final-card">
+        <div class="final-stars" aria-hidden="true">⭐ ⭐ ⭐</div>
+        <span class="level-tag dark">COURSE COMPLETE</span>
+        <h2>Reflexión final</h2>
+        <p>
+          Al iniciar el curso podía pensar la evaluación principalmente como una forma de comprobar resultados. El recorrido de estas ocho semanas
+          me permitió verla como un proceso mucho más amplio: primero debo comprender al estudiante y su contexto; luego definir qué aprendizaje quiero observar;
+          formular indicadores claros; escoger o construir el instrumento adecuado; recopilar evidencias; aplicar la normativa y, finalmente, utilizar los resultados
+          para mejorar la enseñanza y brindar los apoyos que cada estudiante necesita.
+        </p>
+        <p>
+          El aprendizaje más importante que me deja este curso es que <strong>evaluar no es clasificar estudiantes</strong>. Evaluar es tomar decisiones con evidencia,
+          responsabilidad y criterio pedagógico. Una buena evaluación debe ser clara, justa, técnicamente sustentada y suficientemente flexible para reconocer que los estudiantes no aprenden ni demuestran lo aprendido de una única manera.
+        </p>
+        <div class="final-badges">
+          <span>🎓 Criterio pedagógico</span>
+          <span>📊 Evidencia</span>
+          <span>⚖️ Justicia</span>
+          <span>🧩 Inclusión</span>
+          <span>🔄 Retroalimentación</span>
+        </div>
+        <div class="certificate">
+          <div class="certificate-icon">🏆</div>
+          <div>
+            <small>PORTAFOLIO COMPLETADO</small>
+            <strong>Evaluación de los Aprendizajes</strong>
+            <span>Daniel Tijerino Cerón · 2026 · Docente del curso: Licda. Paola Porras Monge</span>
+          </div>
+        </div>
+        <a class="game-button primary" href="#inicio">↟ VOLVER AL INICIO</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>PORTAFOLIO INTERACTIVO</strong><span>2026C2-G07-EVALUACIÓN DE LOS APRENDIZAJES</span><span>2do Cuatrimestre 2026 · Sede Central San José</span></div>
+    <div><span>Estudiante: Daniel Tijerino Cerón</span><span>Docente: Licda. Paola Porras Monge</span></div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button id="closeLightbox" type="button" aria-label="Cerrar imagen">✕</button>
+    <img id="lightboxImage" src="" alt="Evidencia ampliada" />
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite">🪙 ¡Moneda obtenida!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
